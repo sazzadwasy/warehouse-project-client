@@ -1,0 +1,98 @@
+[
+    {
+        "name": "Suzuki Gixxer-250",
+        "img": "https://images.carandbike.com/bike-images/colors/suzuki/gixxer-250/suzuki-gixxer-250-metallic-triton-blue.webp?v=6",
+        "description": "Suzuki is a Japanese multinational corporation, which manufactures automobiles, four-wheel drive vehicles, motorcycles, combustion engines, etc.",
+        "price": "2000$",
+        "quantity": "1",
+        "supplier": "Sazzad"
+    },
+    {
+        "name": "Suzuki Hayabusa",
+        "img": "https://images.carandbike.com/bike-images/medium/suzuki/hayabusa/suzuki-hayabusa.webp?v=42",
+        "description": "Suzuki is a Japanese multinational corporation, which manufactures automobiles, four-wheel drive vehicles, motorcycles, combustion engines, etc.",
+        "price": "1500$",
+        "quantity": "1",
+        "supplier": "Wasy"
+    },
+    {
+        "name": "Suzuki Access",
+        "img": "https://images.carandbike.com/bike-images/medium/suzuki/new-access-125/suzuki-new-access-125.webp?v=52",
+        "description": "Suzuki is a Japanese multinational corporation, which manufactures automobiles, four-wheel drive vehicles, motorcycles, combustion engines, etc.",
+        "price": "2200$",
+        "quantity": "1",
+        "supplier": "Abdullah"
+    },
+    {
+        "name": "Suzuki Gixxer SF",
+        "img": "https://images.carandbike.com/bike-images/medium/suzuki/gixxer-sf/suzuki-gixxer-sf.webp?v=32",
+        "description": "Suzuki is a Japanese multinational corporation, which manufactures automobiles, four-wheel drive vehicles, motorcycles, combustion engines, etc.",
+        "price": "3000$",
+        "quantity": "1",
+        "supplier": "Tahmid"
+    },
+    {
+        "name": "Suzuki Intruder",
+        "img": "https://images.carandbike.com/bike-images/medium/suzuki/intruder/suzuki-intruder.webp?v=23",
+        "description": "Suzuki is a Japanese multinational corporation, which manufactures automobiles, four-wheel drive vehicles, motorcycles, combustion engines, etc.",
+        "price": "5000$",
+        "quantity": "1",
+        "supplier": "Talha"
+    },
+    {
+        "name": "Suzuki Burgman",
+        "img": "https://images.carandbike.com/bike-images/medium/suzuki/burgman/suzuki-burgman.webp?v=73",
+        "description": "Suzuki is a Japanese multinational corporation, which manufactures automobiles, four-wheel drive vehicles, motorcycles, combustion engines, etc.",
+        "price": "2800$",
+        "quantity": "1",
+        "supplier": "Arham"
+    },
+    {
+        "name": "Gixxer SF-250",
+        "img": "https://images.carandbike.com/bike-images/medium/suzuki/gixxer-sf-250/suzuki-gixxer-sf-250.webp?v=14",
+        "description": "Suzuki is a Japanese multinational corporation, which manufactures automobiles, four-wheel drive vehicles, motorcycles, combustion engines, etc.",
+        "price": "3200$",
+        "quantity": "1",
+        "supplier": "Rayhan"
+    },
+    {
+        "name": "Suzuki Avenis",
+        "img": "https://images.carandbike.com/bike-images/medium/suzuki/avenis/suzuki-avenis.webp?v=16",
+        "description": "Suzuki is a Japanese multinational corporation, which manufactures automobiles, four-wheel drive vehicles, motorcycles, combustion engines, etc.",
+        "price": "2500$",
+        "quantity": "1",
+        "supplier": "Tareq"
+    },
+    {
+        "name": "Suzuki Gixxer",
+        "img": "https://images.carandbike.com/bike-images/medium/suzuki/gixxer/suzuki-gixxer.webp?v=32",
+        "description": "Suzuki is a Japanese multinational corporation, which manufactures automobiles, four-wheel drive vehicles, motorcycles, combustion engines, etc.",
+        "price": "4000$",
+        "quantity": "1",
+        "supplier": "Shahriar"
+    },
+    {
+        "name": "Suzuki v-strom",
+        "img": "https://images.carandbike.com/bike-images/medium/suzuki/v-strom-sx-250/suzuki-v-strom-sx-250.webp?v=5",
+        "description": "Suzuki is a Japanese multinational corporation, which manufactures automobiles, four-wheel drive vehicles, motorcycles, combustion engines, etc.",
+        "price": "4200$",
+        "quantity": "1",
+        "supplier": "Monir"
+    },
+    {
+        "name": "V-strom 650xt",
+        "img": "https://images.carandbike.com/bike-images/medium/suzuki/v-strom-650xt/suzuki-v-strom-650xt.webp?v=19",
+        "description": "Suzuki is a Japanese multinational corporation, which manufactures automobiles, four-wheel drive vehicles, motorcycles, combustion engines, etc.",
+        "price": "4500$",
+        "quantity": "1",
+        "supplier": "Farhan"
+    },
+    {
+        "name": "Gixxer SF-blue",
+        "img": "https://images.91wheels.com//assets/b_images/main/models/profile/profile1649232138.JPG?width=384&q=60",
+        "description": "Suzuki is a Japanese multinational corporation, which manufactures automobiles, four-wheel drive vehicles, motorcycles, combustion engines, etc.",
+        "price": "5000$",
+        "quantity": "1",
+        "supplier": "Sajid"
+    }
+]

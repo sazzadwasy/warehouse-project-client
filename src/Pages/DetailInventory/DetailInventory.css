@@ -3,6 +3,7 @@
     margin: auto;
     padding: 10px;
     border: 2px solid gray;
+    display: flex;
 }
 
 .img-container img {

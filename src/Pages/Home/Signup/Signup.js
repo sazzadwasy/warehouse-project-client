@@ -6,18 +6,15 @@ import auth from '../../../firebase.init';
 
 const Signup = () => {
     const navigate = useNavigate()
+    let errorElement
     const [
         createUserWithEmailAndPassword,
         user,
         loading,
         error,
-    ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
     if (error) {
-        return (
-            <div>
-                <p>Error: {error.message}</p>
-            </div>
-        );
+        errorElement = <p className='text-danger fw-bold'>Error: {error.message}</p>
     }
     if (loading) {
         return <p>Loading...</p>;
@@ -49,6 +46,8 @@ const Signup = () => {
                         <br />
                         <input className='btn btn-secondary' type='submit' value='Signup' />
                         <br />
+                        <br />
+                        {errorElement}
                         <br />
                         <p>Already have dealership ? <Link className='text-decoration-none' to='/login'>Please Login</Link></p>
                     </form>

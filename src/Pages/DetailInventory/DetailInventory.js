@@ -22,18 +22,20 @@ const DetailInventory = () => {
                 <div className='img-container'>
                     <img src={img} alt='' />
                 </div>
-                <div className='bike-detail'>
-                    <h4>{name}</h4>
-                    <p>{description}</p>
-                    <p>Supplier : {supplier}</p>
-                    <p>Quantity : {quantity}</p>
-                    <p>Price : {price}$</p>
-                    <button className='detail-buttons mt-2'>Delever</button>
-                </div>
-                <div className='addStock-section mt-4'>
-                    <div className='mx-auto'>
-                        <input type='text' name='quantity' placeholder='Write quantity' />
-                        <button className='detail-buttons'>Add stock</button>
+                <div>
+                    <div className='bike-detail'>
+                        <h4>{name}</h4>
+                        <p>{description}</p>
+                        <p>Supplier : {supplier}</p>
+                        <p>Quantity : {quantity}</p>
+                        <p>Price : {price}$</p>
+                        <button className='detail-buttons mt-2'>Delever</button>
+                    </div>
+                    <div className='addStock-section mt-4'>
+                        <div className='mx-auto'>
+                            <input type='text' name='quantity' placeholder='Write quantity' />
+                            <button className='detail-buttons'>Add stock</button>
+                        </div>
                     </div>
                 </div>
             </div>

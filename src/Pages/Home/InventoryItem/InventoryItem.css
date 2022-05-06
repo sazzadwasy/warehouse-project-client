@@ -1,0 +1,18 @@
+.inventory-item {
+    border: 2px solid goldenrod;
+    padding: 10px;
+    text-align: center;
+}
+
+.inventory-item p {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.update-btn {
+    background-color: #76D7C4;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 30px;
+}

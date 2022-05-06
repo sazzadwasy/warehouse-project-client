@@ -1,0 +1,26 @@
+.detail-container {
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid gray;
+}
+
+.img-container img {
+    margin-left: 20px;
+
+}
+
+.bike-detail p {
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 2px;
+}
+
+.addStock-section {
+    margin-top: 4px;
+}
+
+.detail-buttons {
+    background-color: #76D7C4;
+    padding: 5px 20px;
+}

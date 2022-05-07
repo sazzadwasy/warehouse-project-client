@@ -29,7 +29,7 @@ const OtherLogins = () => {
             </div>
             {errorElement}
             <div className='text-center'>
-                <button onClick={() => signInWithGoogle()} className='btn btn-primary w-50 mb-2'>Google Sign-In</button>
+                <button onClick={() => signInWithGoogle()} className='btn btn-primary w-100 mb-2'>Google Sign-In</button>
                 <br />
                 <button className='btn btn-secondary w-50'>GitHub Sign-In</button>
             </div>

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import InventoryItem from '../InventoryItem/InventoryItem';
 import './InventoryItems.css'
 
@@ -21,6 +22,9 @@ const InventoryItems = () => {
                         item={item}
                     ></InventoryItem>)
                 }
+            </div>
+            <div className='text-center mb-4'>
+                <Link to='/manageinventory'><button className=' detail-buttons'>Manage Inventories</button></Link>
             </div>
         </div>
     );

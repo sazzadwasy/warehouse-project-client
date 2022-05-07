@@ -1,13 +1,11 @@
 .detail-container {
-    width: 50%;
     margin: auto;
-    padding: 10px;
     border: 2px solid gray;
-    display: flex;
+
 }
 
-.img-container img {
-    margin-left: 20px;
+.img-container {
+    margin: 0 auto;
 
 }
 

@@ -16,26 +16,59 @@ const DetailInventory = () => {
                 setInventoryItem(data)
             })
     }, [id])
+    const handleDeliver = () => {
+        const url = `http://localhost:5000/inventory/update/${id}`
+        console.log(url)
+        fetch(url, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ quantity: inventoryItem.quantity - 1 })
+        })
+            .then(res => res.json())
+            .then(data => {
+                setInventoryItem({ ...inventoryItem, quantity: inventoryItem.quantity - 1 })
+            })
+    }
+    const handleRestock = (event) => {
+        event.preventDefault()
+        const newQuantity = parseInt(event.target.quantity.value)
+        const url = `http://localhost:5000/inventory/update/${id}`
+        console.log(url)
+        fetch(url, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ quantity: inventoryItem.quantity + newQuantity })
+        })
+            .then(res => res.json())
+            .then(data => {
+                setInventoryItem({ ...inventoryItem, quantity: inventoryItem.quantity + newQuantity })
+            })
+    }
     return (
         <div className='p-4'>
             <div className='detail-container'>
                 <div className='img-container'>
-                    <img src={img} alt='' />
+                    <img className='img-fluid' src={img} alt='' />
                 </div>
-                <div>
+                <div className='p-4'>
                     <div className='bike-detail'>
                         <h4>{name}</h4>
                         <p>{description}</p>
                         <p>Supplier : {supplier}</p>
                         <p>Quantity : {quantity}</p>
-                        <p>Price : {price}$</p>
-                        <button className='detail-buttons mt-2'>Delever</button>
+                        <p>Price : {price}</p>
+                        <button onClick={handleDeliver} className='detail-buttons mt-2'>Deliver</button>
                     </div>
-                    <div className='addStock-section mt-4'>
-                        <div className='mx-auto'>
-                            <input type='text' name='quantity' placeholder='Write quantity' />
-                            <button className='detail-buttons'>Add stock</button>
-                        </div>
+                    <br />
+                    <div>
+                        <form onSubmit={handleRestock}>
+                            <input type='number' name='quantity' placeholder='Write quantity' required />
+                            <button type='submit' className='detail-buttons'>Add stock</button>
+                        </form>
                     </div>
                 </div>
             </div>

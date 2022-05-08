@@ -8,7 +8,7 @@ const DetailInventory = () => {
     const [inventoryItem, setInventoryItem] = useState({})
     const { _id, name, description, img, price, quantity, supplier } = inventoryItem
     useEffect(() => {
-        const url = `http://localhost:5000/inventory/${id}`
+        const url = `https://frozen-tor-80149.herokuapp.com/inventory/${id}`
         console.log(url)
         fetch(url)
             .then(res => res.json())
@@ -17,7 +17,7 @@ const DetailInventory = () => {
             })
     }, [id])
     const handleDeliver = () => {
-        const url = `http://localhost:5000/inventory/update/${id}`
+        const url = `https://frozen-tor-80149.herokuapp.com/inventory/update/${id}`
         console.log(url)
         fetch(url, {
             method: 'PUT',
@@ -34,7 +34,7 @@ const DetailInventory = () => {
     const handleRestock = (event) => {
         event.preventDefault()
         const newQuantity = parseInt(event.target.quantity.value)
-        const url = `http://localhost:5000/inventory/update/${id}`
+        const url = `https://frozen-tor-80149.herokuapp.com/inventory/update/${id}`
         console.log(url)
         fetch(url, {
             method: 'PUT',

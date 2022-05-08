@@ -6,7 +6,7 @@ import './InventoryItems.css'
 const InventoryItems = () => {
     const [items, setItems] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/inventory')
+        fetch('https://frozen-tor-80149.herokuapp.com/inventory')
             .then(res => res.json())
             .then(data => {
                 setItems(data)

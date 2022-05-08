@@ -13,7 +13,7 @@ const ManageInventory = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you want ot delete this inventory?')
         if (proceed) {
-            const url = `http://localhost:5000/inventory/${id}`
+            const url = `https://frozen-tor-80149.herokuapp.com/inventory/${id}`
             fetch(url, {
                 method: 'DELETE'
             })

@@ -13,7 +13,7 @@ const MyItems = () => {
         if (user) {
             const email = user?.email
             console.log(email)
-            const url = `http://localhost:5000/myitems?email=${email}`
+            const url = `https://frozen-tor-80149.herokuapp.com/myitems?email=${email}`
             try {
                 fetch(url, {
                     headers: {

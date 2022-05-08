@@ -1,0 +1,25 @@
+.mainOffice-container {
+    display: flex;
+}
+
+.mainOffice-banner img {
+    border-radius: 10px;
+}
+
+.mainOffice-info p {
+    font-size: 20px;
+}
+
+.mainOffice-info {
+    margin: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .mainOffice-banner img {
+        width: 100%;
+    }
+
+    .mainOffice-container {
+        flex-direction: column;
+    }
+}

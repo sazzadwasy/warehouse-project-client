@@ -1,10 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import useInventoryes from '../../hooks/useInventoryes';
 import './ManageInventory.css'
 
 const ManageInventory = () => {
     const [inventoryes, setInventoryes] = useInventoryes()
+    const navigate = useNavigate()
+    const handleNavigateToBike = id => {
+        navigate(`/inventory/${id}`)
+
+    }
     const handleDelete = id => {
         const proceed = window.confirm('Are you want ot delete this inventory?')
         if (proceed) {
@@ -34,6 +39,7 @@ const ManageInventory = () => {
                             <p className="card-text fw-bold">Price : {inventory.price}</p>
                             <p className="card-text fw-bold">Quantity : {inventory.quantity}</p>
                             <button onClick={() => handleDelete(inventory._id)} className='detail-buttons'>Delete</button>
+                            <button onClick={() => handleNavigateToBike(inventory._id)} className='detail-buttons mx-2'>Update</button>
                         </div>
 
                     )

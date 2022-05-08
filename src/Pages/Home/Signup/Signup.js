@@ -1,11 +1,13 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import OtherLogins from '../../OtherLogins/OtherLogins';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 
 const Signup = () => {
     const navigate = useNavigate()
+    const location = useLocation()
+    let from = location.state?.from?.pathname || "/";
     let errorElement
     const [
         createUserWithEmailAndPassword,
@@ -17,10 +19,10 @@ const Signup = () => {
         errorElement = <p className='text-danger fw-bold'>Error: {error.message}</p>
     }
     if (loading) {
-        return <p>Loading...</p>;
+        return <p className='text-center fs-2'>Loading...</p>;
     }
     if (user) {
-        navigate('/home')
+        navigate(from, { replace: true })
     }
     const handleSignup = event => {
         event.preventDefault()

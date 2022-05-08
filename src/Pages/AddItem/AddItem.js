@@ -17,6 +17,7 @@ const AddItem = () => {
             .then(res => res.json())
             .then(result => {
                 console.log(result)
+                alert('Item added successfuly')
             })
     }
     return (
@@ -24,6 +25,7 @@ const AddItem = () => {
             <h1 className='text-center text-secondary'>Add new item</h1>
             <form className='add-form' onSubmit={handleSubmit(onSubmit)}>
                 <input className='mb-2 p-2' type="text" placeholder="Your name" {...register("name")} />
+                <input className='mb-2 p-2' type="email" placeholder="email" {...register("email")} />
                 <input className='mb-2 p-2' type="text" placeholder="Description" {...register("description")} />
                 <input className='mb-2 p-2' type="text" placeholder="Img url" {...register("img")} />
                 <input className='mb-2 p-2' type="text" placeholder="Supplier" {...register("supplier")} />

@@ -15,7 +15,7 @@ const OtherLogins = () => {
         errorElement = <p className='text-danger fw-bold'>Error: {error.message}</p>
     }
     if (loading) {
-        return <p>Loading...</p>;
+        return <p className='text-center fs-2'>Loading...</p>;
     }
     if (user) {
         navigate(from, { replace: true })
